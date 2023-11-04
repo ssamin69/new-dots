@@ -1,0 +1,163 @@
+{
+  "layer": "top",
+  "position": "top",
+  "margin": "5 10 0",
+  "mod": "dock",
+  "exclusive": true,
+  "passthrough": false,
+  "gtk-layer-shell": true,
+  "height": 50,
+  "modules-left": [
+    "clock",
+     "hyprland/workspaces"
+  ],
+// "modules-center": [
+  // "custom/spotify"
+// ],
+  "modules-right": [
+	  "custom/spotify",
+    "network",
+    "bluetooth",
+    "temperature",
+    "battery",
+    "backlight",
+    "pulseaudio",
+    //"pulseaudio#microphone",
+    "tray",
+    "custom/power-menu"
+  ],
+  "include": [],
+  "hyprland/window": {
+    "format": "{}"
+  },
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "on-click": "activate",
+   // "persistent_workspaces": {
+     // "1": [],
+     // "2": [],
+      //"3": [],
+     // "4": [],
+     // "5": [],
+     // "6": [],
+     // "7": [],
+     // "8": [],
+     // "9": [],
+     // "10": []
+//    }
+  },
+  "tray": {
+    "icon-size": 18,
+    "spacing": 10
+  },
+  "clock": {
+    "format": "{:  %R   %a,%e %b}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "backlight": {
+    "device": "eDP-1",
+    "format": "{icon} {percent}%",
+    "format-icons": [
+      "󰃞",
+      "󰃟",
+      "󰃠"
+    ]
+  },
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 20
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{time} {icon}",
+    "format-icons": [
+      "󰂎",
+      "󰁺",
+      "󰁻",
+      "󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+      "󰁹"
+    ]
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "tooltip": false,
+    "format-muted": " Muted",
+   // "on-click": "~/.config/waybar/scripts/volume --toggle",
+    "on-click": "pavucontrol",
+    //"on-scroll-up": "~/.config/waybar/scripts/volume --inc",
+    //"on-scroll-down": "~/.config/waybar/scripts/volume --dec",
+    //"scroll-step": 5,
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    }
+  },
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": " {volume}%",
+    "format-source-muted": " Muted",
+  //  "on-click": "~/.config/waybar/scripts/volume --toggle-mic",
+    "on-click-right": "pavucontrol",
+   // "on-scroll-up": "~/.config/waybar/scripts/volume --mic-inc",
+    //"on-scroll-down": "~/.config/waybar/scripts/volume --mic-dec",
+    //"scroll-step": 5
+  },
+  "temperature": {
+//    "thermal-zone": 1,
+    "format": "{temperatureC}°C ",
+    "critical-threshold": 80,
+    "format-critical": "{temperatureC}°C "
+  },
+  "network": {
+    // "interface": "wlp2*", // (Optional) To force the use of this interface
+    "format-wifi": "  {signalStrength}%",
+    "format-ethernet": "{ipaddr}/{cidr}",
+    "tooltip-format": "{essid} - {ifname} via {gwaddr}",
+    "format-linked": "{ifname} (No IP)",
+    "format-disconnected": "Disconnected ⚠",
+    "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}"
+  },
+  "bluetooth": {
+    "format": " {status}",
+    "format-disabled": " off",
+    "format-connected": " {num_connections}",
+    "tooltip-format": "{device_alias}",
+    "tooltip-format-connected": " {device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}",
+    "on-click": "blueman-manager"
+  },
+     "custom/spotify": {
+        "exec": "python3 ~/.config/waybar/scripts/mediaplayer.py --player spotify",
+	"max-length" : 30,
+        "format": " {}",
+        "return-type": "json",
+        "on-click": "playerctl play-pause",
+        "on-double-click-right": "playerctl next",
+        "on-scroll-down": "playerctl previous",
+        "max-length": "15"	
+    },
+     "custom/power-menu": {
+        "format": " ⏻ ",
+        "on-click": "wlogout"
+     } 
+
+}
