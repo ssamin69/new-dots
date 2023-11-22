@@ -1,6 +1,6 @@
 # new-dots
 
-personal stuff
+these are my personal stuff so if you want to use make changes accordingly (e.g username)
 
 DE/WM: Hyprland
 
