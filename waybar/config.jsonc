@@ -1,27 +1,25 @@
 {
   "layer": "top",
   "position": "top",
-  "margin": "5 10 0",
-  "mod": "dock",
-  "exclusive": true,
-  "passthrough": false,
-  "gtk-layer-shell": true,
+  "margin": "10 10 0",
+//  "mod": "dock",
+ // "exclusive": true,
+  //"passthrough": true,
+  //"gtk-layer-shell": true,
   "height": 50,
   "modules-left": [
     "clock",
      "hyprland/workspaces"
   ],
-// "modules-center": [
-  // "custom/spotify"
-// ],
   "modules-right": [
 	  "custom/spotify",
     "network",
-    "bluetooth",
-    "temperature",
+  //  "bluetooth",
+//    "temperature",
     "battery",
     "backlight",
     "pulseaudio",
+    "custom/wallpaper",
     //"pulseaudio#microphone",
     "tray",
     "custom/power-menu"
@@ -33,7 +31,7 @@
   "hyprland/workspaces": {
     "disable-scroll": true,
     "all-outputs": true,
-    "on-click": "activate",
+    "on-click": "activate"
    // "persistent_workspaces": {
      // "1": [],
      // "2": [],
@@ -115,8 +113,7 @@
     "format": "{format_source}",
     "format-source": " {volume}%",
     "format-source-muted": " Muted",
-  //  "on-click": "~/.config/waybar/scripts/volume --toggle-mic",
-    "on-click-right": "pavucontrol",
+    "on-click-right": "pavucontrol"
    // "on-scroll-up": "~/.config/waybar/scripts/volume --mic-inc",
     //"on-scroll-down": "~/.config/waybar/scripts/volume --mic-dec",
     //"scroll-step": 5
@@ -132,9 +129,8 @@
     "format-wifi": "  {signalStrength}%",
     "format-ethernet": "{ipaddr}/{cidr}",
     "tooltip-format": "{essid} - {ifname} via {gwaddr}",
-    "format-linked": "{ifname} (No IP)",
-    "format-disconnected": "Disconnected ⚠",
-    "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}"
+    "format-disconnected": "Disconnected ⚠"
+//    "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}"
   },
   "bluetooth": {
     "format": " {status}",
@@ -147,17 +143,22 @@
   },
      "custom/spotify": {
         "exec": "python3 ~/.config/waybar/scripts/mediaplayer.py --player spotify",
-	"max-length" : 30,
+	"max-length" : 35,
         "format": " {}",
         "return-type": "json",
         "on-click": "playerctl play-pause",
         "on-double-click-right": "playerctl next",
-        "on-scroll-down": "playerctl previous",
-        "max-length": "15"	
+        "on-scroll-down": "playerctl previous"
+	
     },
      "custom/power-menu": {
         "format": " ⏻ ",
         "on-click": "wlogout"
-     } 
+     },
+     "custom/wallpaper":{
+	     "format": "",
+	     "on-click": "/home/samething/.config/wallpapers/swww_randomize.sh",
+	"tooltip" : false
+     }
 
 }

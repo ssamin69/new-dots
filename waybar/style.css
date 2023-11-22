@@ -1,4 +1,5 @@
 @import '/home/samething/.cache/wal/colors-waybar.css';
+
 * {
     border: none;
     border-radius: 0;
@@ -12,8 +13,12 @@ window#waybar {
     border-radius: 10px;
     background: @color0;
     color: #cdd6f4;
+    
+    
 }
-
+window#waybar.hidden {
+	opacity: 0.1;
+}
 tooltip {
     background: #010409;
     border-radius: 10px;
@@ -21,7 +26,7 @@ tooltip {
 
 #workspaces button {
     padding: 5px;
-    color: @color1;
+    color: @color11;
     margin-right: 5px;
 }
 
@@ -42,11 +47,11 @@ tooltip {
 
 #workspaces button:hover {
     background: @color0;
-    color: @color1;
+    color: @color11;
 }
 #custom-spotify
 {
-	color: @color1;
+	color: @color11;
 	margin-right: 6px;
 }
 #window,
@@ -60,7 +65,7 @@ tooltip {
 #tray,
 #backlight {
     padding: 0px 10px;
-    color: @color1;
+    color: @color11;
 }
 
 /*close to the right */
@@ -73,7 +78,7 @@ tooltip {
 }
 
 #tray {
-    margin-right: 5px;
+    margin-right: 6px;
 }
 
 #workspaces {
@@ -89,20 +94,20 @@ tooltip {
 
 #clock {
     margin-left: 5px;
-    color: @color1;
+    color: @color11;
 }
 
 #network {
-    color: @color1;
+    color: @color11;
 }
 
 #bluetooth {
-    color: @color1;
+    color: @color11;
     margin-right: 6px
 } 
 
 #pulseaudio {
-    color: @color1;
+    color: @color11;
     margin-right: 6px;
 }
 
@@ -112,11 +117,18 @@ tooltip {
 }
 
 #battery {
-    color: @color1;
+    color: @color11;
     margin-right: 6px;
 
+
+}
+#custom-wallpaper
+{
+color: @color11;
+
+margin-right: 8px;
 }
 #custom-power-menu {
-	color: @color1;
+	color: @color11;
         margin-right: 10px;
 }
