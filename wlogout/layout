@@ -1,0 +1,38 @@
+{
+    "label" : "lock",
+ "action" : "swaylock swaylock --clock --indicator --screenshots --effect-scale 0.4 --effect-vignette 0.2:0.5 --effect-blur 4x2",
+
+    
+    "keybind" : "l"
+}
+{
+    "label" : "hibernate",
+    "action" : "sleep 1; systemctl hibernate",
+    
+    "keybind" : "h"
+}
+{
+    "label" : "logout",
+    "action" : "loginctl terminate-user $USER",
+    
+    
+    "keybind" : "e"
+}
+{
+    "label" : "shutdown",
+    "action" : "sleep 1; systemctl poweroff",
+    
+    "keybind" : "s"
+}
+{
+    "label" : "suspend",
+    "action" : "sleep 1; systemctl suspend",
+    
+    "keybind" : "u"
+}
+{
+    "label" : "reboot",
+    "action" : "sleep 1; systemctl reboot",
+    
+    "keybind" : "r"
+}
