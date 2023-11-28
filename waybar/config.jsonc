@@ -46,7 +46,7 @@
 //    }
   },
   "tray": {
-    "icon-size": 18,
+   // "icon-size": 21,
     "spacing": 10
   },
   "clock": {
@@ -129,8 +129,9 @@
     "format-wifi": "  {signalStrength}%",
     "format-ethernet": "{ipaddr}/{cidr}",
     "tooltip-format": "{essid} - {ifname} via {gwaddr}",
-    "format-disconnected": "Disconnected ⚠"
-//    "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}"
+    "format-disconnected": "Disconnected ⚠",
+    "on-click": "/home/samething/.config/rofi-network-manager/rofi-network-manager.sh"
+
   },
   "bluetooth": {
     "format": " {status}",

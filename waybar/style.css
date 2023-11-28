@@ -1,7 +1,7 @@
 @import '/home/samething/.cache/wal/colors-waybar.css';
 
 * {
-    border: none;
+    border: solid;
     border-radius: 0;
     font-family: "JetBrainsMono Nerd Font";
     font-weight: bold;
@@ -10,15 +10,18 @@
 }
 
 window#waybar {
-    border-radius: 10px;
+    border:4px;
+    border-style: solid;
+    
+    border-color: @color11;
     background: @color0;
     color: #cdd6f4;
     
     
 }
 window#waybar.hidden {
-	opacity: 0.1;
-}
+    opacity: 0.2;
+    }
 tooltip {
     background: #010409;
     border-radius: 10px;
@@ -31,12 +34,14 @@ tooltip {
 }
 
 #workspaces button.active {
-    color: @color0;
-    background : @color13;
+       color: @color0;
+
+    background : @color11;
 }
 
 #workspaces button.focused {
-    color: #a6adc8;
+       color: #a6adc8;
+
     background: #010409;
 }
 
@@ -46,6 +51,11 @@ tooltip {
 }
 
 #workspaces button:hover {
+      border:4px;
+    border-style: solid;
+    border-color: @color11;
+
+
     background: @color0;
     color: @color11;
 }

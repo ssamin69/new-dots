@@ -8,10 +8,15 @@ files=(${files[@]/$current})
 
 if [ ${#files[@]} -ge 1 ]; then
   random="${files[RANDOM % ${#files[@]}]}"
-  swww img "${random}" --transition-type center
+
+  swww img "${random}" --transition-step 110 --transition-type center --transition-fps 24
+
   wal -i "${random}" -o /home/samething/.config/wal/dunst.sh
+  
+
 else
   printf "it was not possible to change the wallpaper because it is either missing or such wallpaper is already installed"
 fi
+
 
 
