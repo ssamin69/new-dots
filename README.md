@@ -19,14 +19,17 @@ wallpapers: swww
 ![image](https://github.com/ssamin69/new-dots/assets/72408262/de2995f4-bfc5-4685-9347-7deb900183df)
 ![image](https://github.com/ssamin69/new-dots/assets/72408262/c89a09c1-4937-4787-ad5f-ecc7b75092ef)
 ![image](https://github.com/ssamin69/new-dots/assets/72408262/675c493f-7bd5-4405-898f-c2d0b044c332)
-
-
-
-
-
-
 ![image](https://github.com/ssamin69/new-dots/assets/72408262/b2699495-8625-41c0-a657-5e7874070e23)
 ![image](https://github.com/ssamin69/new-dots/assets/72408262/c59434ee-90c2-400f-b814-3c0a6a76ba15)
+
+
+https://github.com/ssamin69/new-dots/assets/72408262/b98876a5-eb88-4c6a-9b83-324fb859c16f
+
+
+
+
+
+
 
 
 
