@@ -23,6 +23,13 @@ wallpapers: swww
 ![image](https://github.com/ssamin69/new-dots/assets/72408262/c59434ee-90c2-400f-b814-3c0a6a76ba15)
 
 
+
+
+firefox: [penguinFox](https://github.com/p3nguin-kun/penguinFox)
+
+https://github.com/ssamin69/new-dots/assets/72408262/9a8d7857-5e39-4035-8855-04c5376e07af
+
+
 https://github.com/ssamin69/new-dots/assets/72408262/b98876a5-eb88-4c6a-9b83-324fb859c16f
 
 
