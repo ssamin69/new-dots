@@ -25,6 +25,7 @@ wallpapers: swww
 ![IMG-20231213-WA0001](https://github.com/ssamin69/new-dots/assets/72408262/9c1a234e-52b7-47ec-9a62-de45bc99a1d9)
 ![IMG-20231213-WA0002](https://github.com/ssamin69/new-dots/assets/72408262/5813cf89-dec1-4084-b46d-02fb879be90f)
 ![IMG-20231213-WA0003](https://github.com/ssamin69/new-dots/assets/72408262/1b3ffb3e-08d4-4018-b121-7961b233b8eb)
+![ezgif com-speed (2)](https://github.com/ssamin69/new-dots/assets/72408262/42ee3fb8-e906-40a1-b88f-daf593083bca)
 
 
 
