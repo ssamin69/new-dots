@@ -15,15 +15,13 @@ window#waybar {
     
     border-color: @color11;
     background: @color0;
-    color: #cdd6f4;
-    
     
 }
-window#waybar.hidden {
+window#waybar.hidden { 
     opacity: 0.2;
     }
 tooltip {
-    background: #010409;
+    background: @color11;
     border-radius: 10px;
 }
 
@@ -73,6 +71,7 @@ tooltip {
 #temperature,
 #workspaces,
 #tray,
+#custom-wallpaper,
 #backlight {
     padding: 0px 10px;
     color: @color11;
@@ -135,8 +134,7 @@ tooltip {
 #custom-wallpaper
 {
 color: @color11;
-
-margin-right: 8px;
+margin-right: 6px;
 }
 #custom-power-menu {
 	color: @color11;
