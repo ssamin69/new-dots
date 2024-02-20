@@ -14,6 +14,11 @@ Theme: pywal
 
 wallpapers: swww
 
+
+updated screenshot:
+![image](https://github.com/ssamin69/new-dots/assets/72408262/42e93cb6-ed00-4bf5-83a6-87cd60ee568f)
+
+old images:
 ![image](https://github.com/ssamin69/new-dots/assets/72408262/ee3c979d-3588-40b0-8a9c-2d4e154fd840)
 ![image](https://github.com/ssamin69/new-dots/assets/72408262/0367bf0b-8d0c-4cb0-bbf7-57b55808f5fb)
 ![image](https://github.com/ssamin69/new-dots/assets/72408262/de2995f4-bfc5-4685-9347-7deb900183df)
