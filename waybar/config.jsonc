@@ -14,13 +14,13 @@
   "modules-right": [
 	  "custom/spotify",
     "tray",
-   // "network",
+    "network",
   //  "bluetooth",
 //    "temperature",
     "battery",
     "backlight",
     "pulseaudio",
-    //"custom/noti",
+    "custom/noti",
     "custom/wallpaper",
     //"pulseaudio#microphone",
     "custom/power-menu"
@@ -126,15 +126,14 @@
     "critical-threshold": 80,
     "format-critical": "{temperatureC}°C "
   },
-  "network": {
-    // "interface": "wlp2*", // (Optional) To force the use of this interface
-    "format-wifi": "  {signalStrength}%",
-    "format-ethernet": "{ipaddr}/{cidr}",
-    "tooltip-format": "{essid} - {ifname} via {gwaddr}",
-    "format-disconnected": "Disconnected ⚠",
-    "on-click": "/home/samething/.config/rofi-network-manager/rofi-network-manager.sh"
-
+   "network": {
+    "interface": "wlan0",
+    "format": "{ifname}",
+    "tooltip-format-wifi": "{icon} ⇣{bandwidthDownBytes} ⇡{bandwidthUpBytes}",
+    "format-wifi": "⇣⇡ {bandwidthTotalBytes}"
   },
+
+
   "bluetooth": {
     "format": " {status}",
     "format-disabled": " off",
@@ -145,28 +144,45 @@
     "on-click": "blueman-manager"
   },
      "custom/spotify": {
-        "exec": "python3 ~/.config/waybar/scripts/mediaplayer.py --player spotify",
+          "exec": "python3 ~/.config/waybar/scripts/mediaplayer.py --player spotify",
 	"max-length" : 35,
         "format": " {}",
         "return-type": "json",
         "on-click": "playerctl play-pause",
         "on-double-click-right": "playerctl next",
         "on-scroll-down": "playerctl previous"
-	
     },
      "custom/power-menu": {
         "format": " ⏻ ",
         "on-click": "wlogout"
      },
-    "custom/noti":{
-    "format": "",
-    "on-click": "swaync-client -t",
     
-  },
-     "custom/wallpaper":{
+  "custom/noti": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "<span foreground='red'><sup></sup></span>",
+      "none": "",
+      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-none": "",
+      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-inhibited-none": ""
+    },
+       "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+   // "on-double-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+   },
+     
+    "custom/wallpaper":{
 	     "format": "",
 	     "on-click": "/home/samething/.config/wallpapers/swww_randomize.sh",
        "tooltip" : false
-     }
+     },
+  
 
 }

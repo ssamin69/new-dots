@@ -87,7 +87,7 @@ tooltip {
 }
 
 #tray {
-    margin-right: 6px;
+    margin-right: 4px;
 }
 
 #workspaces {
@@ -136,6 +136,12 @@ tooltip {
 color: @color11;
 margin-right: 6px;
 }
+
+#custom-noti {
+   color: @color11;
+    margin-right: 6px;
+}
+
 #custom-power-menu {
 	color: @color11;
         margin-right: 10px;
