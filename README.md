@@ -17,6 +17,8 @@ wallpapers: swww
 
 updated screenshot:
 ![image](https://github.com/ssamin69/new-dots/assets/72408262/42e93cb6-ed00-4bf5-83a6-87cd60ee568f)
+![image](https://github.com/ssamin69/new-dots/assets/72408262/9a7fac96-1da5-4fc5-9475-c5d33ede1acb)
+
 
 old images:
 ![image](https://github.com/ssamin69/new-dots/assets/72408262/ee3c979d-3588-40b0-8a9c-2d4e154fd840)
